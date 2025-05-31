@@ -1,0 +1,148 @@
+{
+  "inicio": {
+    "tipo": "pergunta",
+    "texto": "Você está com febre?",
+    "acao_registro": {"chave": "tem_febre"},
+    "proximo_no_sim": "no_dificuldade_respirar",
+    "proximo_no_nao": "no_coriza_sem_febre"
+  },
+  "no_dificuldade_respirar": {
+    "tipo": "pergunta",
+    "texto": "Você está com dificuldade para respirar ou falta de ar?",
+    "acao_registro": {"chave": "dificuldade_respirar"},
+    "proximo_no_sim": "no_sintoma_cianose",
+    "proximo_no_nao": "no_pede_temperatura_com_febre_sem_dif_resp"
+  },
+  "no_sintoma_cianose": {
+    "tipo": "pergunta",
+    "texto": "Seus lábios ou rosto estão com uma coloração azulada?",
+    "acao_registro": {"chave": "cianose"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 10},
+    "proximo_no_nao": "no_sintoma_dor_peito"
+  },
+  "no_sintoma_dor_peito": {
+    "tipo": "pergunta",
+    "texto": "Você está sentindo dor ou pressão persistente no peito?",
+    "acao_registro": {"chave": "dor_peito"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 11},
+    "proximo_no_nao": "no_sintoma_confusao_mental"
+  },
+  "no_sintoma_confusao_mental": {
+    "tipo": "pergunta",
+    "texto": "Você apresenta confusão mental nova ou uma dificuldade incomum para acordar ou permanecer acordado(a)?",
+    "acao_registro": {"chave": "confusao_mental"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 12},
+    "proximo_no_nao": "no_perda_olfato_paladar_com_febre_dif_resp"
+  },
+  "no_perda_olfato_paladar_com_febre_dif_resp": {
+    "tipo": "pergunta",
+    "texto": "Você teve perda repentina de olfato (cheiro) ou paladar (sabor)?",
+    "acao_registro": {"chave": "perda_olfato_paladar"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 9},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 4}
+  },
+  "no_pede_temperatura_com_febre_sem_dif_resp": {
+    "tipo": "entrada_numerica",
+    "texto": "Qual a sua temperatura corporal aproximada (em °C)?",
+    "chave_dado": "temperatura",
+    "proximo_no": "no_dor_corpo_com_febre_sem_dif_resp"
+  },
+  "no_dor_corpo_com_febre_sem_dif_resp": {
+    "tipo": "pergunta",
+    "texto": "Você tem dor no corpo intensa ou mal-estar geral significativo?",
+    "acao_registro": {"chave": "dor_corpo_intensa"},
+    "proximo_no_sim": "logica_resultado_com_febre_dor_corpo",
+    "proximo_no_nao": "logica_resultado_com_febre_sem_dor_corpo"
+  },
+  "logica_resultado_com_febre_dor_corpo": {
+    "tipo": "logica",
+    "nome_metodo_logica": "avaliar_com_febre_e_dor_corpo"
+  },
+  "logica_resultado_com_febre_sem_dor_corpo": {
+    "tipo": "logica",
+    "nome_metodo_logica": "avaliar_com_febre_sem_dor_corpo_ou_proxima_pergunta"
+  },
+  "checar_olfato_para_ID3_contexto_febre_dorcorpo": {
+    "tipo": "pergunta",
+    "texto": "Além desses sintomas, você teve perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 13},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 3}
+  },
+  "no_dor_garganta_febre_baixa_sem_dor_corpo_checar_olfato": {
+    "tipo": "pergunta",
+    "texto": "Você tem dor de garganta?",
+    "acao_registro": {"chave": "dor_garganta"},
+    "proximo_no_sim": "checar_olfato_para_ID3_contexto_febre_dor_garganta",
+    "proximo_no_nao": "checar_olfato_para_ID8_contexto_febre_sem_sintomas_claros"
+  },
+  "checar_olfato_para_ID3_contexto_febre_dor_garganta": {
+    "tipo": "pergunta",
+    "texto": "Além da dor de garganta, você teve perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 13},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 3}
+  },
+  "checar_olfato_para_ID8_contexto_febre_sem_sintomas_claros": {
+    "tipo": "pergunta",
+    "texto": "Apesar de não ter sintomas muito claros, você notou perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 13},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 8}
+  },
+  "no_tosse_produtiva_com_febre_sem_dor":{
+    "tipo": "pergunta",
+    "texto": "Você tem tosse com secreção (catarro)?",
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 2},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 2}
+  },
+  "no_coriza_sem_febre": {
+    "tipo": "pergunta",
+    "texto": "Você tem coriza (nariz escorrendo) ou espirros frequentes?",
+    "acao_registro": {"chave": "coriza_espirros"},
+    "proximo_no_sim": "no_coceira_olhos_nariz_sem_febre",
+    "proximo_no_nao": "no_tosse_seca_sem_febre_sem_coriza_checar_olfato"
+  },
+  "no_coceira_olhos_nariz_sem_febre": {
+    "tipo": "pergunta",
+    "texto": "Você tem coceira nos olhos ou no nariz?",
+    "acao_registro": {"chave": "coceira_olhos_nariz"},
+    "proximo_no_sim": "checar_olfato_para_ID5_contexto_sem_febre_coriza_coceira",
+    "proximo_no_nao": "checar_olfato_para_ID6_contexto_sem_febre_coriza_sem_coceira"
+  },
+  "checar_olfato_para_ID5_contexto_sem_febre_coriza_coceira": {
+    "tipo": "pergunta",
+    "texto": "Além desses sintomas (coriza, coceira), você teve perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 15},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 5}
+  },
+  "checar_olfato_para_ID6_contexto_sem_febre_coriza_sem_coceira": {
+    "tipo": "pergunta",
+    "texto": "Além desses sintomas (coriza), você teve perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 15},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 6}
+  },
+  "no_tosse_seca_sem_febre_sem_coriza_checar_olfato": {
+    "tipo": "pergunta",
+    "texto": "Você tem tosse seca persistente?",
+    "acao_registro": {"chave": "tosse_seca_persistente"},
+    "proximo_no_sim": "checar_olfato_para_ID7_contexto_sem_febre_tosse_seca",
+    "proximo_no_nao": "checar_olfato_para_ID8_contexto_sem_febre_sem_sintomas_claros"
+  },
+  "checar_olfato_para_ID7_contexto_sem_febre_tosse_seca":{
+    "tipo": "pergunta",
+    "texto": "Além da tosse seca, você teve perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 14},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 7}
+  },
+  "checar_olfato_para_ID8_contexto_sem_febre_sem_sintomas_claros":{
+    "tipo": "pergunta",
+    "texto": "Apesar de não ter sintomas muito claros, você notou perda repentina de olfato ou paladar?",
+    "acao_registro": {"chave": "perda_olfato_paladar_adicional"},
+    "proximo_no_sim": {"tipo_resultado": "direto", "id_resultado": 15},
+    "proximo_no_nao": {"tipo_resultado": "direto", "id_resultado": 8}
+  }
+}

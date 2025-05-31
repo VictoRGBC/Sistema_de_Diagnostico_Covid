@@ -1,0 +1,107 @@
+[
+  {
+    "ID_Resultado": 1,
+    "Descricao_Logica": "Febre alta (>=38.5°C) E Dor no corpo intensa (SEM dificuldade respiratória inicial)",
+    "Resultado_Principal": "Gripe Forte",
+    "Prob_Gripe": 0.75, "Prob_Resfriado": 0.15, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.04, "Prob_COVID": 0.30, "Prob_Aval_Medica": 0.10, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Repouso é fundamental. Beba bastante líquido (água, chás, sucos naturais) para se manter hidratado. Alimente-se de forma leve e saudável. Monitore a febre. Se a febre persistir alta por mais de 3 dias, ou se surgirem outros sintomas preocupantes (como falta de ar intensa), procure um médico."
+  },
+  {
+    "ID_Resultado": 2,
+    "Descricao_Logica": "Febre alta (>=38.5°C), SEM Dor no corpo intensa, SEM dificuldade respiratória inicial E Tosse produtiva",
+    "Resultado_Principal": "Possível Infecção Respiratória",
+    "Prob_Gripe": 0.40, "Prob_Resfriado": 0.30, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.24, "Prob_COVID": 0.35, "Prob_Aval_Medica": 0.15, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Mantenha repouso e hidrate-se bem. A tosse produtiva pode indicar a necessidade de avaliação médica para verificar a origem da infecção. Evite ambientes com fumaça ou ar condicionado muito seco. Se houver febre persistente, dor no peito ao respirar ou piora da tosse, procure um médico."
+  },
+  {
+    "ID_Resultado": 3,
+    "Descricao_Logica": "Febre baixa/moderada (<38.5°C), SEM dificuldade respiratória inicial, SEM perda de olfato/paladar E (Dor de garganta OU Dor no corpo intensa)",
+    "Resultado_Principal": "Resfriado Comum / Infecção Viral Leve",
+    "Prob_Gripe": 0.10, "Prob_Resfriado": 0.65, "Prob_Alergia": 0.05, "Prob_Viral_Leve": 0.25, "Prob_COVID": 0.10, "Prob_Aval_Medica": 0.05, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Descanse, beba líquidos e alimente-se bem. Para dor de garganta, gargarejos com água morna e sal podem ajudar. Analgésicos comuns podem ser usados para dor e febre, conforme orientação da bula. Se os sintomas persistirem por mais de 5-7 dias ou piorarem, consulte um médico."
+  },
+  {
+    "ID_Resultado": 4,
+    "Descricao_Logica": "Febre E Dificuldade para respirar E SEM perda de olfato/paladar E SEM sinais de gravidade extrema (cianose, dor no peito crítica, confusão mental)",
+    "Resultado_Principal": "ALERTA: Avaliação Médica Urgente (Sintomas Respiratórios)",
+    "Prob_Gripe": 0.25, "Prob_Resfriado": 0.10, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.09, "Prob_COVID": 0.50, "Prob_Aval_Medica": 0.70, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Dificuldade para respirar associada à febre requer AVALIAÇÃO MÉDICA URGENTE. Dirija-se a um serviço de saúde o mais rápido possível. Enquanto isso, tente manter a calma e, se possível, fique em uma posição confortável que facilite a respiração (ex: sentado ou semi-sentado)."
+  },
+  {
+    "ID_Resultado": 5,
+    "Descricao_Logica": "SEM Febre, COM Coriza/Espirros, COM Coceira nos olhos/nariz E SEM perda de olfato/paladar",
+    "Resultado_Principal": "Alergia Respiratória",
+    "Prob_Gripe": 0.01, "Prob_Resfriado": 0.10, "Prob_Alergia": 0.85, "Prob_Viral_Leve": 0.04, "Prob_COVID": 0.01, "Prob_Aval_Medica": 0.05, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Tente identificar e evitar possíveis alérgenos (poeira, pólen, pelos de animais, mofo). Mantenha o ambiente limpo e arejado. Lave as narinas com soro fisiológico. Anti-histamínicos podem ajudar, conforme orientação farmacêutica ou médica. Se os sintomas forem persistentes ou graves, consulte um alergista."
+  },
+  {
+    "ID_Resultado": 6,
+    "Descricao_Logica": "SEM Febre, COM Coriza/Espirros, SEM Coceira nos olhos/nariz E SEM perda de olfato/paladar",
+    "Resultado_Principal": "Resfriado Comum",
+    "Prob_Gripe": 0.05, "Prob_Resfriado": 0.75, "Prob_Alergia": 0.15, "Prob_Viral_Leve": 0.05, "Prob_COVID": 0.02, "Prob_Aval_Medica": 0.05, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Repouso, hidratação e alimentação saudável são importantes. Lave as mãos frequentemente. Analgésicos e descongestionantes podem ser usados com moderação, seguindo as orientações da bula. A maioria dos resfriados melhora em alguns dias. Se os sintomas persistirem por mais de uma semana ou piorarem, procure um médico."
+  },
+  {
+    "ID_Resultado": 7,
+    "Descricao_Logica": "SEM Febre, SEM Coriza/Espirros, COM Tosse seca persistente E SEM perda de olfato/paladar",
+    "Resultado_Principal": "Irritação / Outra Condição Leve (Ex: Refluxo, Pós-viral)",
+    "Prob_Gripe": 0.02, "Prob_Resfriado": 0.15, "Prob_Alergia": 0.10, "Prob_Viral_Leve": 0.60, "Prob_COVID": 0.15, "Prob_Aval_Medica": 0.05, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Beba bastante líquido morno (chá com mel, água) para ajudar a acalmar a garganta. Evite irritantes como fumaça, poeira ou ar muito seco (use umidificador se necessário). Se a tosse for muito persistente, incomodar o sono ou vier acompanhada de outros sintomas, procure avaliação médica para investigar a causa."
+  },
+  {
+    "ID_Resultado": 8,
+    "Descricao_Logica": "SEM Febre, SEM Coriza/Espirros, SEM Tosse seca persistente E SEM perda de olfato/paladar",
+    "Resultado_Principal": "Sintomas Inespecíficos / Observar",
+    "Prob_Gripe": 0.02, "Prob_Resfriado": 0.10, "Prob_Alergia": 0.05, "Prob_Viral_Leve": 0.13, "Prob_COVID": 0.05, "Prob_Aval_Medica": 0.10, "Prob_Outro": 0.65,
+    "Orientacoes_Cuidados": "Observe a evolução dos seus sintomas. Mantenha hábitos saudáveis de alimentação, hidratação e sono. Se os sintomas persistirem, piorarem ou se novos sintomas preocupantes surgirem, procure orientação médica para um diagnóstico adequado."
+  },
+  {
+    "ID_Resultado": 9,
+    "Descricao_Logica": "Febre E Dificuldade para respirar E COM Perda de olfato/paladar (SEM sinais de gravidade extrema imediata)",
+    "Resultado_Principal": "ALERTA: Alta Suspeita de COVID-19 - Avaliação Médica Urgente",
+    "Prob_Gripe": 0.05, "Prob_Resfriado": 0.05, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.04, "Prob_COVID": 0.85, "Prob_Aval_Medica": 0.95, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "PROCURE ATENDIMENTO MÉDICO IMEDIATAMENTE. Isole-se de outras pessoas para evitar a propagação e use máscara se precisar sair. Informe os profissionais de saúde sobre todos os seus sintomas, incluindo a perda de olfato/paladar, assim que chegar ao local de atendimento."
+  },
+  {
+    "ID_Resultado": 10,
+    "Descricao_Logica": "Febre E Dificuldade para respirar E Lábios/rosto azulados",
+    "Resultado_Principal": "ALERTA CRÍTICO: SINAIS DE EXTREMA GRAVIDADE (CIANOSE) - PROCURE ATENDIMENTO MÉDICO IMEDIATAMENTE!",
+    "Prob_Gripe": 0.01, "Prob_Resfriado": 0.01, "Prob_Alergia": 0.00, "Prob_Viral_Leve": 0.01, "Prob_COVID": 0.70, "Prob_Aval_Medica": 1.00, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "ATENÇÃO: ESTE É UM SINAL DE EXTREMA GRAVIDADE. CHAME UMA AMBULÂNCIA (SAMU 192) OU DIRIJA-SE AO PRONTO-SOCORRO MAIS PRÓXIMO IMEDIATAMENTE. Não espere. Se possível, tenha alguém para acompanhá-lo(a) e informe o serviço de emergência sobre a cianose."
+  },
+  {
+    "ID_Resultado": 11,
+    "Descricao_Logica": "Febre E Dificuldade para respirar E Dor/pressão persistente no peito (sem cianose)",
+    "Resultado_Principal": "ALERTA CRÍTICO: SINAIS DE GRAVIDADE (DOR NO PEITO) - PROCURE ATENDIMENTO MÉDICO IMEDIATAMENTE!",
+    "Prob_Gripe": 0.02, "Prob_Resfriado": 0.01, "Prob_Alergia": 0.00, "Prob_Viral_Leve": 0.02, "Prob_COVID": 0.65, "Prob_Aval_Medica": 0.98, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "ATENÇÃO: Dor ou pressão persistente no peito, especialmente com febre e falta de ar, é um SINAL DE GRAVIDADE. PROCURE ATENDIMENTO MÉDICO DE EMERGÊNCIA IMEDIATAMENTE (SAMU 192 ou pronto-socorro). Não tente tratar em casa. Informe o serviço de emergência sobre a dor no peito."
+  },
+  {
+    "ID_Resultado": 12,
+    "Descricao_Logica": "Febre E Dificuldade para respirar E Confusão mental/dificuldade para acordar (sem cianose ou dor no peito confirmada)",
+    "Resultado_Principal": "ALERTA CRÍTICO: SINAIS DE GRAVIDADE (ALTERAÇÃO NEUROLÓGICA) - PROCURE ATENDIMENTO MÉDICO IMEDIATAMENTE!",
+    "Prob_Gripe": 0.01, "Prob_Resfriado": 0.01, "Prob_Alergia": 0.00, "Prob_Viral_Leve": 0.01, "Prob_COVID": 0.60, "Prob_Aval_Medica": 0.98, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "ATENÇÃO: Confusão mental nova ou dificuldade para acordar/permanecer acordado, especialmente com febre e falta de ar, é um SINAL DE GRAVIDADE. PROCURE ATENDIMENTO MÉDICO DE EMERGÊNCIA IMEDIATAMENTE (SAMU 192 ou pronto-socorro). É crucial uma avaliação médica rápida."
+  },
+  {
+    "ID_Resultado": 13,
+    "Descricao_Logica": "Febre (baixa/moderada), SEM dificuldade respiratória inicial, COM perda de olfato/paladar (outros sintomas variados)",
+    "Resultado_Principal": "Suspeita de COVID-19 (com perda de olfato/paladar) / Avaliação Médica Recomendada",
+    "Prob_Gripe": 0.05, "Prob_Resfriado": 0.10, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.10, "Prob_COVID": 0.75, "Prob_Aval_Medica": 0.60, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "A perda de olfato/paladar com febre, mesmo que baixa, é um sintoma sugestivo. Isole-se preventivamente, monitore todos os sintomas e procure um médico para avaliação e possível testagem. Mantenha-se hidratado e repouse."
+  },
+  {
+    "ID_Resultado": 14,
+    "Descricao_Logica": "SEM Febre, COM Coriza/Espirros ou Tosse Seca Persistente, E COM perda de olfato/paladar",
+    "Resultado_Principal": "Suspeita de COVID-19 (com perda de olfato/paladar, sem febre) / Avaliação Médica Recomendada",
+    "Prob_Gripe": 0.01, "Prob_Resfriado": 0.05, "Prob_Alergia": 0.02, "Prob_Viral_Leve": 0.10, "Prob_COVID": 0.70, "Prob_Aval_Medica": 0.50, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "Mesmo sem febre, a combinação de sintomas respiratórios leves com perda de olfato/paladar é sugestiva. Recomenda-se procurar um médico para avaliação e possível testagem. Monitore outros sintomas e adote medidas de precaução (máscara, distanciamento)."
+  },
+  {
+    "ID_Resultado": 15,
+    "Descricao_Logica": "SEM Febre, SEM sintomas respiratórios expressivos (Coriza, Tosse), MAS COM perda de olfato/paladar",
+    "Resultado_Principal": "Suspeita de COVID-19 (principalmente perda de olfato/paladar, sem febre) / Avaliação Médica Recomendada",
+    "Prob_Gripe": 0.01, "Prob_Resfriado": 0.05, "Prob_Alergia": 0.01, "Prob_Viral_Leve": 0.05, "Prob_COVID": 0.65, "Prob_Aval_Medica": 0.40, "Prob_Outro": 0.00,
+    "Orientacoes_Cuidados": "A perda de olfato/paladar, mesmo como sintoma predominante e sem febre ou outros sintomas respiratórios fortes, justifica uma avaliação médica para investigar a causa, incluindo a possibilidade de COVID-19. Monitore-se e adote precauções."
+  }
+]
