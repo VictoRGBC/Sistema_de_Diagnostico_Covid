@@ -1,4 +1,5 @@
 {
+  // Arvore de Decisao completa
   "inicio": {
     "tipo": "pergunta",
     "texto": "Você está com febre?",

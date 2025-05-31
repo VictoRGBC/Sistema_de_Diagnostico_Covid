@@ -1,4 +1,5 @@
 [
+  // Logica para definir a condiçao do paciente
   {
     "ID_Resultado": 1,
     "Descricao_Logica": "Febre alta (>=38.5°C) E Dor no corpo intensa (SEM dificuldade respiratória inicial)",
