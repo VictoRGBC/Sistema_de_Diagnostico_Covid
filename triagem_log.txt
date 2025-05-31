@@ -1,0 +1,107 @@
+2025-05-31 10:49:21,663 - INFO - Aplicação iniciada.
+2025-05-31 10:49:21,675 - INFO - Arquivo resultados.json carregado com sucesso.
+2025-05-31 10:49:21,685 - ERROR - Erro ao decodificar arvore_decisao.json.
+2025-05-31 10:49:21,688 - ERROR - Falha ao carregar dados de configuração. Aplicação não pode iniciar corretamente.
+2025-05-31 10:52:48,143 - INFO - Aplicação iniciada.
+2025-05-31 10:52:48,153 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 10:52:48,154 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json carregado com sucesso.
+2025-05-31 10:52:48,157 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:52:49,445 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:52:50,246 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 10:52:50,248 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 10:52:52,910 - INFO - Resposta registrada: dificuldade_respirar = True
+2025-05-31 10:52:52,911 - INFO - Processando nó: no_sintoma_cianose - 'Seus lábios ou rosto estão com uma coloração azulada?'
+2025-05-31 10:52:54,447 - INFO - Resposta registrada: cianose = True
+2025-05-31 10:52:54,449 - INFO - Nó de resultado direto: ID 10. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 10:52:54,449 - INFO - Resultado final exibido: ID 10. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': True, 'cianose': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 10:53:21,625 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:53:22,576 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:53:24,479 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 10:53:24,480 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 10:53:25,276 - INFO - Resposta registrada: dificuldade_respirar = False
+2025-05-31 10:53:25,278 - INFO - Processando nó: no_pede_temperatura_com_febre_sem_dif_resp - 'Qual a sua temperatura corporal aproximada (em °C)?'
+2025-05-31 10:53:27,582 - INFO - Entrada numérica registrada: temperatura = 34.0
+2025-05-31 10:53:27,583 - INFO - Processando nó: no_dor_corpo_com_febre_sem_dif_resp - 'Você tem dor no corpo intensa ou mal-estar geral significativo?'
+2025-05-31 10:53:28,933 - INFO - Resposta registrada: dor_corpo_intensa = True
+2025-05-31 10:53:28,935 - INFO - Processando nó: logica_resultado_com_febre_dor_corpo - ''
+2025-05-31 10:53:28,935 - INFO - Nó de resultado direto: ID 3. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_3
+2025-05-31 10:53:28,935 - INFO - Resultado final exibido: ID 3. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': False, 'temperatura': 34.0, 'dor_corpo_intensa': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_3
+2025-05-31 10:53:36,963 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:53:38,203 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:53:39,625 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 10:53:39,626 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 10:53:40,533 - INFO - Resposta registrada: dificuldade_respirar = True
+2025-05-31 10:53:40,535 - INFO - Processando nó: no_sintoma_cianose - 'Seus lábios ou rosto estão com uma coloração azulada?'
+2025-05-31 10:53:43,226 - INFO - Resposta registrada: cianose = False
+2025-05-31 10:53:43,228 - INFO - Processando nó: no_sintoma_dor_peito - 'Você está sentindo dor ou pressão persistente no peito?'
+2025-05-31 10:53:46,070 - INFO - Resposta registrada: dor_peito = True
+2025-05-31 10:53:46,072 - INFO - Nó de resultado direto: ID 11. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> no_sintoma_dor_peito -> resultado_direto_id_11
+2025-05-31 10:53:46,072 - INFO - Resultado final exibido: ID 11. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': True, 'cianose': False, 'dor_peito': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> no_sintoma_dor_peito -> resultado_direto_id_11
+2025-05-31 10:59:02,786 - INFO - Aplicação iniciada.
+2025-05-31 10:59:02,788 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 10:59:02,788 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json carregado com sucesso.
+2025-05-31 10:59:02,790 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:59:04,121 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:59:05,807 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 10:59:05,810 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 10:59:06,985 - INFO - Resposta registrada: dificuldade_respirar = True
+2025-05-31 10:59:06,987 - INFO - Processando nó: no_sintoma_cianose - 'Seus lábios ou rosto estão com uma coloração azulada?'
+2025-05-31 10:59:07,960 - INFO - Resposta registrada: cianose = True
+2025-05-31 10:59:07,961 - INFO - Nó de resultado direto: ID 10. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 10:59:07,962 - INFO - Resultado final exibido: ID 10. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': True, 'cianose': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 10:59:09,493 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:59:10,357 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:59:11,359 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 10:59:11,361 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 10:59:13,283 - INFO - Resposta registrada: dificuldade_respirar = False
+2025-05-31 10:59:13,284 - INFO - Processando nó: no_pede_temperatura_com_febre_sem_dif_resp - 'Qual a sua temperatura corporal aproximada (em °C)?'
+2025-05-31 10:59:15,572 - INFO - Entrada numérica registrada: temperatura = 45.0
+2025-05-31 10:59:15,573 - INFO - Processando nó: no_dor_corpo_com_febre_sem_dif_resp - 'Você tem dor no corpo intensa ou mal-estar geral significativo?'
+2025-05-31 10:59:16,701 - INFO - Resposta registrada: dor_corpo_intensa = True
+2025-05-31 10:59:16,702 - INFO - Processando nó: logica_resultado_com_febre_dor_corpo - ''
+2025-05-31 10:59:16,703 - INFO - Nó de resultado direto: ID 1. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_1
+2025-05-31 10:59:16,703 - INFO - Resultado final exibido: ID 1. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': False, 'temperatura': 45.0, 'dor_corpo_intensa': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_1
+2025-05-31 10:59:18,080 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 10:59:18,991 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 10:59:19,732 - INFO - Resposta registrada: tem_febre = False
+2025-05-31 10:59:19,734 - INFO - Processando nó: no_coriza_sem_febre - 'Você tem coriza (nariz escorrendo) ou espirros frequentes?'
+2025-05-31 10:59:21,668 - INFO - Resposta registrada: coriza_espirros = True
+2025-05-31 10:59:21,670 - INFO - Processando nó: no_coceira_olhos_nariz_sem_febre - 'Você tem coceira nos olhos ou no nariz?'
+2025-05-31 10:59:23,161 - INFO - Nó de resultado direto: ID 5. Caminho: inicio_triagem -> inicio -> no_coriza_sem_febre -> no_coceira_olhos_nariz_sem_febre -> resultado_direto_id_5
+2025-05-31 10:59:23,161 - INFO - Resultado final exibido: ID 5. Dados do usuário: {'tem_febre': False, 'coriza_espirros': True}. Caminho final: inicio_triagem -> inicio -> no_coriza_sem_febre -> no_coceira_olhos_nariz_sem_febre -> resultado_direto_id_5
+2025-05-31 11:01:56,226 - INFO - Aplicação iniciada.
+2025-05-31 11:01:56,235 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 11:01:56,244 - ERROR - Erro ao decodificar c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json: Expecting property name enclosed in double quotes: line 54 column 63 (char 2336)
+2025-05-31 11:01:56,247 - CRITICAL - Falha crítica ao carregar dados de configuração. Aplicação será encerrada.
+2025-05-31 11:02:20,070 - INFO - Aplicação iniciada.
+2025-05-31 11:02:20,071 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 11:02:20,084 - ERROR - Erro ao decodificar c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json: Expecting property name enclosed in double quotes: line 54 column 63 (char 2336)
+2025-05-31 11:02:20,086 - CRITICAL - Falha crítica ao carregar dados de configuração. Aplicação será encerrada.
+2025-05-31 11:04:13,726 - INFO - Aplicação iniciada.
+2025-05-31 11:04:13,728 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 11:04:13,729 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json carregado com sucesso.
+2025-05-31 11:04:13,733 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 11:14:00,596 - INFO - Aplicação iniciada.
+2025-05-31 11:14:00,598 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\resultados.json carregado com sucesso.
+2025-05-31 11:14:00,599 - INFO - Arquivo c:\Users\galat\Downloads\Projeto_Integrador_Covid\arvore_decisao.json carregado com sucesso.
+2025-05-31 11:14:00,603 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 11:14:01,845 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 11:14:02,872 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 11:14:02,874 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 11:14:03,070 - INFO - Resposta registrada: dificuldade_respirar = True
+2025-05-31 11:14:03,072 - INFO - Processando nó: no_sintoma_cianose - 'Seus lábios ou rosto estão com uma coloração azulada?'
+2025-05-31 11:14:03,253 - INFO - Resposta registrada: cianose = True
+2025-05-31 11:14:03,255 - INFO - Nó de resultado direto: ID 10. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 11:14:03,255 - INFO - Resultado final exibido: ID 10. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': True, 'cianose': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_sintoma_cianose -> resultado_direto_id_10
+2025-05-31 11:14:05,441 - INFO - Triagem iniciada/reiniciada.
+2025-05-31 11:14:06,399 - INFO - Processando nó: inicio - 'Você está com febre?'
+2025-05-31 11:14:07,195 - INFO - Resposta registrada: tem_febre = True
+2025-05-31 11:14:07,198 - INFO - Processando nó: no_dificuldade_respirar - 'Você está com dificuldade para respirar ou falta de ar?'
+2025-05-31 11:14:08,091 - INFO - Resposta registrada: dificuldade_respirar = False
+2025-05-31 11:14:08,092 - INFO - Processando nó: no_pede_temperatura_com_febre_sem_dif_resp - 'Qual a sua temperatura corporal aproximada (em °C)?'
+2025-05-31 11:14:11,103 - INFO - Entrada numérica registrada: temperatura = 99.0
+2025-05-31 11:14:11,105 - INFO - Processando nó: no_dor_corpo_com_febre_sem_dif_resp - 'Você tem dor no corpo intensa ou mal-estar geral significativo?'
+2025-05-31 11:14:12,514 - INFO - Resposta registrada: dor_corpo_intensa = True
+2025-05-31 11:14:12,515 - INFO - Processando nó: logica_resultado_com_febre_dor_corpo - ''
+2025-05-31 11:14:12,516 - INFO - Nó de resultado direto: ID 1. Caminho: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_1
+2025-05-31 11:14:12,516 - INFO - Resultado final exibido: ID 1. Dados do usuário: {'tem_febre': True, 'dificuldade_respirar': False, 'temperatura': 99.0, 'dor_corpo_intensa': True}. Caminho final: inicio_triagem -> inicio -> no_dificuldade_respirar -> no_pede_temperatura_com_febre_sem_dif_resp -> no_dor_corpo_com_febre_sem_dif_resp -> logica_resultado_com_febre_dor_corpo -> resultado_direto_id_1
