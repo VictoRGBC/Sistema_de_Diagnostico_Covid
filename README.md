@@ -1,6 +1,4 @@
 # Sistema de Triagem Inicial de Sintomas Baseado em Árvore de Decisão
-
-**(Opcional: Adicione um GIF ou Screenshot da aplicação aqui)**
 ## 🎯 Descrição Curta
 
 Este projeto implementa um sistema de triagem inicial de sintomas utilizando uma árvore de decisão lógica. O objetivo é orientar o usuário através de perguntas sequenciais sobre seus sintomas e fornecer uma indicação probabilística (hipotética) sobre possíveis condições de saúde, além de orientações gerais de cuidados.
